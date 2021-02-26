@@ -1,0 +1,52 @@
+{
+  "name": "ReactIconBuilder",
+  "version": "0.0.1",
+  "scripts": {
+    "generate-icon": "node scripts/generate-icon-system",
+    "start-web": "npm run generate-icon && react-scripts start",
+    "build-web": "npm run generate-icon && react-scripts build",
+    "start-ios": "npm run generate-icon && react-native run-ios",
+    "start-android": "npm run generate-icon && react-native run-android",
+    "lint": "eslint src",
+    "predeploy": "npm run build-web",
+    "deploy": "gh-pages -d build",
+    "pages": "bash gh-pages.sh"
+  },
+  "dependencies": {
+    "icon-font-generator": "^2.1.10",
+    "randomcolor": "^0.5.4",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "0.59.9",
+    "react-native-vector-icons": "^6.6.0",
+    "react-scripts": "^4.0.3",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "gh-pages": "^2.0.1",
+    "metro-react-native-babel-preset": "^0.54.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "license": "MIT",
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
+  }
+}
