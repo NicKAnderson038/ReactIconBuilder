@@ -48,5 +48,6 @@
     "assets": [
       "./src/assets/fonts/"
     ]
-  }
+  },
+  "homepage": "https://nickanderson038.github.io/ReactIconBuilder"
 }
